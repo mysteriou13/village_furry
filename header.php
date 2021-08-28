@@ -14,8 +14,35 @@
 <body>
 
   <nav>
-    <?php
 
+    <div class ="d-flex justify-content-between">
+
+<div>
+<a href = "?page=acceuil"> acceuil </a>
+
+</div>
+
+<div>
+<a href = "?=artiste"> artiste </a>
+</div>
+
+<div>
+  <a href = "?=contact"> contact </a>
+</div>
+
+
+<div>
+</div>
+
+</div>
+
+
+    </div>
+
+<div>
+
+    <?php
+/*
 
     $query = "SELECT * FROM wp_terms ";
 
@@ -59,8 +86,11 @@
 
 
     }
+*/
+
     ?>
 
+</div>
 
   </nav>
 
