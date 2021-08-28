@@ -1,0 +1,9 @@
+div.article
+{
+ display: none;
+
+}
+
+div.catergorie:hover .article{
+	display:block;
+}
