@@ -44,7 +44,7 @@
 
 <?php
 $login->link_logout();
-
+$login->link_inscription();
 ?>
 
 <div>

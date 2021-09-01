@@ -40,7 +40,21 @@ deconnection
 
       }
 
- }
+    }
+
+public  function link_inscription(){
+
+  global $current_user;
+     if(!isset($current_user->user_login)){
+       echo "<div> <a href ='?page=inscription'>
+       inscription
+       </a> </div>";
+
+     }
+
+
+}
+
 
 }
 
