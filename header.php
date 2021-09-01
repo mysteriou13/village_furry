@@ -35,13 +35,17 @@
 </div>
 
 <div>
-<a href = "?=artiste"> artiste </a>
+<a href = "?page=artiste"> artiste </a>
 </div>
 
 <div>
-  <a href = "?=contact"> contact </a>
+  <a href = "?page=contact"> contact </a>
 </div>
 
+<?php
+$login->link_logout();
+
+?>
 
 <div>
 </div>
