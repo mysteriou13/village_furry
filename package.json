@@ -1,0 +1,25 @@
+{
+  "name": "village_furry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysteriou13/village_furry.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mysteriou13/village_furry/issues"
+  },
+  "homepage": "https://github.com/mysteriou13/village_furry#readme",
+  "dependencies": {
+    "bootstrap-sass": "^3.4.1",
+    "http-vue-loader": "^1.4.2",
+    "vue-router": "^3.5.2",
+    "vuejs": "^3.0.1"
+  }
+}
