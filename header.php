@@ -8,6 +8,12 @@
     <meta charset = "UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+      <scrip src = "./node_modules/vue/dist/vue.js"> </script>
+
+        <script src = "./node_modules/vue-router/dist/vue-router.js" ></script>
+
+        <script src = "./node_modules/http-vue-loader/src/httpVueLoader.js"> </script>
+
       <?php wp_head();
 
     $login ="./wp-content/themes/village_furry/class/connection.php";
