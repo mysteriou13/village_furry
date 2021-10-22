@@ -4,15 +4,15 @@
 
 <head>
 
-
     <meta charset = "UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <scrip src = "./node_modules/vue/dist/vue.js"> </script>
+      <script type="text/javascript" src = "http://"+widown.location.hostname+"/wp-content/themes/village_furry/node_modules/vue">  </script>
 
-        <script src = "./node_modules/vue-router/dist/vue-router.js" ></script>
+      <script src = "http://"+window.location.hostname+"/wp-content/themes/village_furry/node_modules/vue-router/dist/vue-router.js" ></script>
 
-        <script src = "./node_modules/http-vue-loader/src/httpVueLoader.js"> </script>
+      <script src = "http://"+window.location.hostname+"/wp-content/themes/village_furry/node_modules/http-vue-loader" ></script>
+
 
       <?php wp_head();
 

@@ -19,7 +19,7 @@
   "dependencies": {
     "bootstrap-sass": "^3.4.1",
     "http-vue-loader": "^1.4.2",
-    "vue-router": "^3.5.2",
-    "vuejs": "^3.0.1"
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.2"
   }
 }
