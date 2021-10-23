@@ -1,13 +1,21 @@
 
+<template>
+
 <div>
 
 <div>
-<center>inscription</center>
+
+<div>
+
 
 </div>
 
 <div>
+<center>
+ inscription
 <table>
+
+
    <tr>
      <td>
        Identifiant
@@ -43,7 +51,11 @@
    </tr>
 
 </table>
-
+</center>
 </div>
 
 </div>
+
+</div>
+
+</template>

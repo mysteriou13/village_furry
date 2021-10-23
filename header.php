@@ -78,3 +78,5 @@ $login->form_connection();
 </div>
 
   </nav>
+
+<div class = "container ">
