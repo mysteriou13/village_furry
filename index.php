@@ -14,6 +14,18 @@ include($page);
 
 }
 
+?>
+
+
+<div>
+
+
+  {{ message }}
+
+</div>
+
+
+<?php
 get_footer();
 
 ?>
