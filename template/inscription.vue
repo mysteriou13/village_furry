@@ -11,47 +11,83 @@
 </div>
 
 <div>
-<center>
- inscription
-<table>
 
 
-   <tr>
-     <td>
-       Identifiant
-     </td>
-     <td>
-        <input type = "text" name = "login">
-     </td>
-   </tr>
+  <form action="http://village-furry.localhost/?page=inscription"  method = "POST" onsubmit="inscription()">
 
-   <tr>
-     <td>
-       mot de pass
-     </td>
-     <td>
-       <input type = "password" name = "pass">
+<div style = " margin-bottom:2%;"> <center> inscription </center> <div>
 
-     </td>
-   </tr>
+<div style  = "display:flex
+align-items: center;
+  justify-content: center;>
+">
 
 
-   <tr>
-     <td>
-       email
-     </td>
-     <td>
-       <input type = "email" name = "mail">
 
-     </td>
-   </tr>
+<div style = "padding-right: 41px;">
+  <div  style = "display:flex; position:relative;
+left:0%;
+  ">
+  <div> pseudo</div>
+  </div>
 
-   <tr>
-     <td> <input type = "submit" value = "envoyer"> </td>
-   </tr>
+  <div  style = "display:flex">
+  <div> pass
+  </div>
 
-</table>
-</center>
+</div>
+
+</div>
+
+
+
+<div>
+  <div  style = "display:flex">
+  <div> <input type = "text"></div>
+  </div>
+
+  <div  style = "display:flex">
+
+  <div style = "display:flex">
+
+<div>
+     <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
+
+ <input type="password" id ="pass"  onkeyup="length_string(2,'pass','mot de pass ','taille_pass')">
+
+</div>
+     <div  id = "taille_pass" > </div>
+
+
+   </div>
+
+  </div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+<div style = "
+display:flex
+align-items: center;
+  justify-content: center;
+">
+<div> <input type = "submit"></div>
+</div>
+
+
+</div>
+
+
+  </form>
+
+
+
 </div>
 
 </div>

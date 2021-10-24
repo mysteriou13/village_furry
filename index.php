@@ -4,10 +4,7 @@
 get_header();
 
 
-
-
 ?>
-
 
 
 <div id="my-app">

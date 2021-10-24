@@ -6,25 +6,6 @@
 
 
 
-<script type="text/javascript">
-
-var page = document.location+"";
-
-page = page.split('?page=');
-
-var template = page[1];
-
-var url = "./wp-content/themes/village_furry/template/"+template+".vue";
-
-
-
-     new Vue({
-       el: '#my-app',
-       components: {
-         'my-component': httpVueLoader(url)
-       }
-     });
-   </script>
 
 
 <footer>
@@ -32,8 +13,8 @@ var url = "./wp-content/themes/village_furry/template/"+template+".vue";
 <footer>
 
 
-
-
+<script type="text/javascript" src = "./wp-content/themes/village_furry/js/main.js"> </script>
+  <script src = "./wp-content/themes/village_furry/js/vue/length_string.js"></script>
 
 
   </body>
