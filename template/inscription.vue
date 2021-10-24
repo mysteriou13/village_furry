@@ -43,7 +43,10 @@ left:0%;
 
 <div>
   <div  style = "display:flex">
-  <div> <input type = "text"></div>
+  <div> <input type = "text" id = "pseudo"  onkeyup="length_string(8,'pseudo','pseudo ','taille_pseudo')" ></div>
+
+<div id = "taille_pseudo">   </div>
+
   </div>
 
   <div  style = "display:flex">
@@ -53,7 +56,7 @@ left:0%;
 <div>
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
 
- <input type="password" id ="pass"  onkeyup="length_string(2,'pass','mot de pass ','taille_pass')">
+ <input type="password" id ="pass"  onkeyup="length_string(8,'pass','mot de pass ','taille_pass')">
 
 </div>
      <div  id = "taille_pass" > </div>
