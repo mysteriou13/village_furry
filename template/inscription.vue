@@ -32,8 +32,16 @@ left:0%;
   </div>
 
   <div  style = "display:flex">
-  <div> pass
+  <div>
+    mot de pass
   </div>
+
+</div>
+
+<div  style = "display:flex">
+<div>
+  repeter mot de pass
+</div>
 
 </div>
 
@@ -61,6 +69,24 @@ left:0%;
 </div>
      <div  id = "taille_pass" > </div>
 
+
+   </div>
+
+  </div>
+
+
+
+  <div  style = "display:flex">
+
+  <div style = "display:flex">
+
+<div>
+     <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
+
+ <input type="password" id ="repet_pass"  onkeyup="verif_pass('pass','repet_pass','verif_pass')">
+
+</div>
+     <div  id = "verif_pass" > </div>
 
    </div>
 
