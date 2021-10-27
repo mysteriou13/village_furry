@@ -13,7 +13,7 @@
 <div>
 
 
-  <form action="http://village-furry.localhost/?page=inscription&test=true"  method = "POST" onsubmit="inscription()">
+  <form action="http://village-furry.localhost/?page=inscription&test=true"  method = "POST">
 
 <div style = " margin-bottom:2%;"> <center> inscription </center> <div>
 
@@ -110,9 +110,15 @@ left:0%;
 <div>
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
 
- <input type="email" id ="email" >
+ <input type="text" id ="email" onkeyup = "validate()">
 
 </div>
+
+
+<div id = "error_mail">
+
+</div>
+
 
    </div>
 

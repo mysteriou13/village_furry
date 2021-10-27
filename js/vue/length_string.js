@@ -38,3 +38,23 @@ document.getElementById(verif_pass).innerHTML = "mot de pass pas identique";
 
 
 }
+
+
+
+function checkEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
+function validate() {
+    var email = document.getElementById("email").value;
+
+    if (checkEmail(email)) {
+        document.getElementById('error_mail').innerHTML = "";
+    } else {
+
+      document.getElementById('error_mail').innerHTML = "format  email non valide";
+
+    }
+    return false;
+}
