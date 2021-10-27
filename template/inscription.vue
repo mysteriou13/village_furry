@@ -13,7 +13,7 @@
 <div>
 
 
-  <form action="http://village-furry.localhost/?page=inscription"  method = "POST" onsubmit="inscription()">
+  <form action="http://village-furry.localhost/?page=inscription&test=true"  method = "POST" onsubmit="inscription()">
 
 <div style = " margin-bottom:2%;"> <center> inscription </center> <div>
 
@@ -41,6 +41,15 @@ left:0%;
 <div  style = "display:flex">
 <div>
   repeter mot de pass
+</div>
+
+</div>
+
+
+
+<div  style = "display:flex">
+<div>
+ email
 </div>
 
 </div>
@@ -87,6 +96,23 @@ left:0%;
 
 </div>
      <div  id = "verif_pass" > </div>
+
+   </div>
+
+  </div>
+
+
+
+  <div  style = "display:flex">
+
+  <div style = "display:flex">
+
+<div>
+     <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
+
+ <input type="email" id ="email" >
+
+</div>
 
    </div>
 
