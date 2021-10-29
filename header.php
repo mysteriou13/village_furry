@@ -34,7 +34,7 @@
 <div id = "app" >
   <nav>
 
-    <div class ="d-flex justify-content-between">
+    <div class ="divlink">
 
 <div>
 <a href = "?page=acceuil"> acceuil </a>
