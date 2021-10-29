@@ -15,19 +15,14 @@
 
   <form action="http://village-furry.localhost/?page=inscription&test=true"  method = "POST">
 
-<div style = " margin-bottom:2%;"> <center> inscription </center> <div>
+<div> <center> inscription </center> <div>
 
-<div style  = "display:flex
-align-items: center;
-  justify-content: center;>
-">
+<div class = "flex_item_center">
 
 
 
-<div style = "padding-right: 41px;">
-  <div  style = "display:flex; position:relative;
-left:0%;
-  ">
+<div style = "padding-right: 4%">
+  <div  style = "display:flex; position:relative ">
   <div> pseudo</div>
   </div>
 
