@@ -128,11 +128,7 @@
 </div>
 
 
-<div style = "
-display:flex
-align-items: center;
-  justify-content: center;
-">
+<div class = "flex_item_center">
 <div> <input type = "submit"></div>
 </div>
 
