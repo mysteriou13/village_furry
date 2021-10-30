@@ -21,19 +21,19 @@
 
 
 
-<div style = "padding-right: 4%">
-  <div  style = "display:flex; position:relative ">
+<div class = "div_text_inscription">
+  <div>
   <div> pseudo</div>
   </div>
 
-  <div  style = "display:flex">
+  <div>
   <div>
     mot de pass
   </div>
 
 </div>
 
-<div  style = "display:flex">
+<div>
 <div>
   repeter mot de pass
 </div>
@@ -42,7 +42,7 @@
 
 
 
-<div  style = "display:flex">
+<div>
 <div>
  email
 </div>
@@ -54,16 +54,16 @@
 
 
 <div>
-  <div  style = "display:flex">
+  <div>
   <div> <input type = "text" id = "pseudo"  onkeyup="length_string(8,'pseudo','pseudo ','taille_pseudo')" ></div>
 
 <div id = "taille_pseudo">   </div>
 
   </div>
 
-  <div  style = "display:flex">
+  <div>
 
-  <div style = "display:flex">
+  <div>
 
 <div>
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
@@ -80,9 +80,9 @@
 
 
 
-  <div  style = "display:flex">
+  <div>
 
-  <div style = "display:flex">
+  <div>
 
 <div>
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
@@ -98,9 +98,9 @@
 
 
 
-  <div  style = "display:flex">
+  <div>
 
-  <div style = "display:flex">
+  <div>
 
 <div>
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
