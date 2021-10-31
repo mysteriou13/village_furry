@@ -13,7 +13,7 @@
 <div>
 
 
-  <form action="http://village-furry.localhost/?page=inscription&test=true"  method = "POST" onmouseover = "validate()" >
+  <form action="http://village-furry.localhost/?page=inscription&type=true"  method = "POST" onmouseover = "validate()" >
 
 <div> <center> inscription </center> <div>
 
@@ -55,11 +55,22 @@
 
 <div>
   <div>
-  <div> <input type = "text" id = "pseudo"  name = "pseudo" onkeyup="length_string(8,'pseudo','pseudo ','taille_pseudo','result_pseudo')" ></div>
+  <div> <input type = "text" id = "pseudo"  name = "pseudo" onkeyup="length_string(8,'pseudo','pseudo ','taille_pseudo','result_pseudo')" >
+
+
+  </div>
+
+
+   <div id = "name_exists">  </div>
+
    <input type = "hidden" id = "result_pseudo">
 <div id = "taille_pseudo">   </div>
 
+
   </div>
+
+
+
 
 
 
@@ -115,6 +126,8 @@
 
 </div>
 
+<div id ="email_pris"> email pris </div>
+
 
 <div id = "error_mail">
 
@@ -156,3 +169,63 @@
 </div>
 
 </template>
+
+
+
+<script>
+
+module.exports = {
+
+mounted(){
+
+  var urlcourante = document.location.href;
+
+
+
+
+  var paragraph = urlcourante;
+
+  var searchTerm = '&pseudo=false';
+
+  var indexOfFirst = paragraph.indexOf(searchTerm);
+
+
+  if(indexOfFirst !== -1){
+
+  document.getElementById('name_exists').innerHTML = "pseudo pris";
+
+}else{
+
+  document.getElementById('name_exists').innerHTML = "";
+
+
+}
+
+
+
+var paragraph = urlcourante;
+
+var searchTerm = '&email=false';
+
+var indexOfFirst = paragraph.indexOf(searchTerm);
+
+
+
+  if(indexOfFirst !== -1){
+
+  document.getElementById('email_pris').innerHTML = "email pris";
+
+}else{
+
+  document.getElementById('email_pris').innerHTML = "";
+
+
+}
+
+}
+
+
+
+}
+
+</script>

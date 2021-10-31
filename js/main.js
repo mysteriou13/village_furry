@@ -4,7 +4,10 @@ page = page.split('?page=');
 
 var template = page[1];
 
-var url = "./wp-content/themes/village_furry/template/"+template+".vue";
+  var file = template.split("&");
+
+
+var url = "./wp-content/themes/village_furry/template/"+file[0]+".vue";
 
 
 

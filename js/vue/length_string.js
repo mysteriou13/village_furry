@@ -68,6 +68,7 @@ if(p === v){
 
 result_pass = true;
 
+document.getElementById(verif_pass).innerHTML = "";
 
 }else{
 
