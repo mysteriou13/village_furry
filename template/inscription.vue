@@ -13,7 +13,7 @@
 <div>
 
 
-  <form action="http://village-furry.localhost/?page=inscription&test=true"  method = "POST">
+  <form action="http://village-furry.localhost/?page=inscription&test=true"  method = "POST" onmouseover = "validate()" >
 
 <div> <center> inscription </center> <div>
 
@@ -55,11 +55,13 @@
 
 <div>
   <div>
-  <div> <input type = "text" id = "pseudo"  onkeyup="length_string(8,'pseudo','pseudo ','taille_pseudo')" ></div>
-
+  <div> <input type = "text" id = "pseudo"  name = "pseudo" onkeyup="length_string(8,'pseudo','pseudo ','taille_pseudo','result_pseudo')" ></div>
+   <input type = "hidden" id = "result_pseudo">
 <div id = "taille_pseudo">   </div>
 
   </div>
+
+
 
   <div>
 
@@ -68,8 +70,9 @@
 <div>
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
 
- <input type="password" id ="pass"  onkeyup="length_string(8,'pass','mot de pass ','taille_pass')">
+ <input type="password" id ="pass" name = "pass"  onkeyup="length_string(8,'pass','mot de pass ','taille_pass','result_pass')">
 
+ <input type = "hidden" id = "result_pass">
 </div>
      <div  id = "taille_pass" > </div>
 
@@ -87,7 +90,9 @@
 <div>
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
 
- <input type="password" id ="repet_pass"  onkeyup="verif_pass('pass','repet_pass','verif_pass')">
+ <input type="password" id ="repet_pass" name = "repet_pass" onkeyup="verif_pass('pass','repet_pass','verif_pass','result_repet_pass')">
+
+  <input type = "hidden" id = "result_repet_pass">
 
 </div>
      <div  id = "verif_pass" > </div>
@@ -105,7 +110,8 @@
 <div>
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
 
- <input type="text" id ="email" onkeyup = "validate()">
+ <input type="text" id ="email" name = "email" onkeyup="validate()" >
+
 
 </div>
 
@@ -114,6 +120,7 @@
 
 </div>
 
+ <input type = "hidden" id = "result_email">
 
    </div>
 
@@ -128,8 +135,10 @@
 </div>
 
 
-<div class = "flex_item_center">
-<div> <input type = "submit"></div>
+<div class = "flex_item_center" >
+
+<div onmouseover = "valide_submit()"> <input id = "btn" type = "button"   value = "envoyer"></div>
+
 </div>
 
 
