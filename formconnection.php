@@ -1,6 +1,6 @@
 <form name="loginform" id="loginform" action="http://localhost/wordpress/wp-login.php" method="post">
 
-<div class = "d-flex">
+<div class = "flex-connection">
 			<div class="login-username">
 				<label for="">Identifiant ou adresse e-mail</label>
 				<input type="text" name="log" id="" class="input" value="" size="20" />
@@ -19,4 +19,3 @@
 </div>
 
 		</form>
-    
