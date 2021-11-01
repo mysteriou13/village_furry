@@ -26,14 +26,14 @@
   <div> pseudo</div>
   </div>
 
-  <div>
+  <div class = "card-text-inscription">
   <div>
     mot de pass
   </div>
 
 </div>
 
-<div>
+<div class = "card-text-inscription">
 <div>
   repeter mot de pass
 </div>
@@ -42,7 +42,7 @@
 
 
 
-<div>
+<div class ="card-text-inscription">
 <div>
  email
 </div>
@@ -54,7 +54,7 @@
 
 
 <div>
-  <div>
+  <div  class = "card-input-inscription">
   <div> <input type = "text" id = "pseudo"  name = "pseudo" onkeyup="length_string(8,'pseudo','pseudo ','taille_pseudo','result_pseudo')" >
 
 
@@ -76,7 +76,7 @@
 
   <div>
 
-  <div>
+  <div class = "card-input-inscription">
 
 <div>
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
@@ -96,9 +96,9 @@
 
   <div>
 
-  <div>
+  <div class = "card-input-inscription">
 
-<div>
+<div >
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
 
  <input type="password" id ="repet_pass" name = "repet_pass" onkeyup="verif_pass('pass','repet_pass','verif_pass','result_repet_pass')">
@@ -116,7 +116,7 @@
 
   <div>
 
-  <div>
+  <div class = "card-input-inscription">
 
 <div>
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
@@ -125,8 +125,6 @@
 
 
 </div>
-
-<div id ="email_pris"> email pris </div>
 
 
 <div id = "error_mail">
