@@ -4,7 +4,6 @@
 
 <head>
 
-
     <meta charset = "UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -35,7 +34,8 @@
   <nav>
 
     <div class ="divlink">
-
+      
+      <a href = "./?page=acceuil"> acceuil </a> <a href = "./?page=inscription"> inscription</a>
 
 
 <div>
@@ -44,6 +44,7 @@
 </div>
 
 <div>
+  
 <?php
 
 $login->form_connection();
