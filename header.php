@@ -36,23 +36,7 @@
 
     <div class ="divlink">
 
-<div>
-<a href = "?page=acceuil"> acceuil </a>
 
-</div>
-
-<div>
-<a href = "?page=artiste"> artiste </a>
-</div>
-
-<div>
-  <a href = "?page=contact"> contact </a>
-</div>
-
-<?php
-$login->link_logout();
-$login->link_inscription();
-?>
 
 <div>
 </div>
