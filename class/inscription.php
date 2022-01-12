@@ -2,9 +2,20 @@
 
 class inscription{
 
-    function  insert_user($username){
+    public function  insert_user($username,$pass,$email){
 
-        username_exists($username);
+        
+        if(username_exists($username) == 0){
+            
+             wp_create_user( $username, $password, $email);
+
+    
+        }else{
+          
+        return $error = "pseudo pris";
+
+        }
+
 
     }
 
