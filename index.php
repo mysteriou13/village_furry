@@ -3,15 +3,7 @@
 
 get_header();
 
-
-
-
 ?>
-
-
-
-
-
 
 <div id="my-app">
   <my-component></my-component>
@@ -20,19 +12,11 @@ get_header();
 <?php
 
 
-
-
-
 if(isset($_POST['pseudo']) &&  !empty($_POST['pseudo']) ){
 
 if(isset($_POST['pass']) &&  !empty($_POST['pass']) ){
 
 if(isset($_POST['email']) &&  !empty($_POST['email']) ){
-
-
-
-
-
 
 
   $pseudo = $_POST['pseudo'];

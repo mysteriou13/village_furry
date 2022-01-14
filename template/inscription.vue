@@ -148,7 +148,9 @@
 
 <div class = "flex_item_center" >
 
-<div onmouseover = "valide_submit()"> <input id = "btn" type = "button"   value = "envoyer"></div>
+<div onmouseover = "valide_submit()"> <input id = "btn" type = "button"   onclick = "verif()" value = "envoyer"></div>
+
+  
 
 </div>
 
@@ -170,60 +172,4 @@
 
 
 
-<script>
 
-module.exports = {
-
-mounted(){
-
-  var urlcourante = document.location.href;
-
-
-
-
-  var paragraph = urlcourante;
-
-  var searchTerm = '&pseudo=false';
-
-  var indexOfFirst = paragraph.indexOf(searchTerm);
-
-
-  if(indexOfFirst !== -1){
-
-  document.getElementById('name_exists').innerHTML = "pseudo pris";
-
-}else{
-
-  document.getElementById('name_exists').innerHTML = "";
-
-
-}
-
-
-
-var paragraph = urlcourante;
-
-var searchTerm = '&email=false';
-
-var indexOfFirst = paragraph.indexOf(searchTerm);
-
-
-
-  if(indexOfFirst !== -1){
-
-  document.getElementById('email_pris').innerHTML = "email pris";
-
-}else{
-
-  document.getElementById('email_pris').innerHTML = "";
-
-
-}
-
-}
-
-
-
-}
-
-</script>
