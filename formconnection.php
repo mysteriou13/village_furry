@@ -1,4 +1,4 @@
-<form name="loginform" id="loginform" action="http://localhost/wordpress/wp-login.php" method="post">
+<form name="loginform" id="loginform" action="http://localhost/site_wordpress/wordpress/wp-login.php" method="post">
 
 <div class = "flex-connection">
 			<div class="login-username">

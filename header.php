@@ -18,9 +18,23 @@
 
     $login ="./wp-content/themes/village_furry/class/connection.php";
 
+    $inscription ="./wp-content/themes/village_furry/class/inscription.php";
 
+    include($inscription);
+
+    $inscription =  new inscription();
+
+      
 
       include($login);
+
+
+    if(isset($_POST) && isset($_GET['page']) && !empty($_GET['page']) && $_GET['page'] == 'inscription'){
+
+        $inscription->insert_user($_POST['pseudo'], $_POST['pass'],$_POST['email'] );
+
+
+      }
 
        $login =  new connection();
 
