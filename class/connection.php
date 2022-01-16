@@ -32,11 +32,9 @@ global $current_user;
 
    global $current_user;
       if(isset($current_user->user_login)){
-echo "<div> <a href ='?page=deconnection'>
+echo "<a href ='?page=deconnection'>
 deconnection
-</a> </div>
-
-";
+</a> ";
 
       }
 
@@ -46,9 +44,9 @@ public  function link_inscription(){
 
   global $current_user;
      if(!isset($current_user->user_login)){
-       echo "<div> <a href ='?page=inscription'>
+       echo "<a href ='?page=inscription'>
        inscription
-       </a> </div>";
+       </a> ";
 
      }
 

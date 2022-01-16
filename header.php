@@ -24,10 +24,12 @@
 
     $inscription =  new inscription();
 
-      
-
+    
       include($login);
 
+  
+
+      
 
     if(isset($_POST) && isset($_GET['page']) && !empty($_GET['page']) && $_GET['page'] == 'inscription'){
 
@@ -49,10 +51,19 @@
 
     <div class ="divlink">
       
-      <a href = "./?page=acceuil"> acceuil </a> <a href = "./?page=inscription"> inscription</a>
+      <a href = "./?page=acceuil"> acceuil </a> <?php echo $login->link_inscription(); $login->link_logout();
+
+ ?>
 
 
 <div>
+
+<div>
+  
+  
+
+    </div>
+
 </div>
 
 </div>
@@ -67,6 +78,8 @@ $login->form_connection();
 
 
 </div>
+
+
 
 
 

@@ -14,7 +14,7 @@
       class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Se souvenir de moi</label></div>
 			<div class="login-submit">
 				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary" value="Se connecter" />
-				<input type="hidden" name="redirect_to" value="http://localhost/wordpress" />
+				<input type="hidden" name="redirect_to" value="http://localhost/site_wordpress/wordpress" />
 			</div>
 </div>
 
