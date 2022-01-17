@@ -23,12 +23,12 @@
 
 <div class = "div_text_inscription">
   <div>
-  <div> pseudo</div>
+  <div> pseudo(8 caractère)</div>
   </div>
 
   <div class = "card-text-inscription">
   <div>
-    mot de pass
+    mot de pass (8 caractère)
   </div>
 
 </div>
