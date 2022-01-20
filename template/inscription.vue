@@ -170,6 +170,40 @@
 
 </template>
 
+<script>
+
+
+module.exports = {
+  
+  mounted() {
+    
+  var pseudo =  document.getElementById("pseudo");
+
+   pseudo.value = document.getElementById("input_pseudo").innerHTML;
+
+     var valuepseudo  = pseudo.value;
+
+   pseudo.value = valuepseudo.trim();
+
+
+   var email =  document.getElementById("email");
+
+   email.value = document.getElementById("input_email").innerHTML;
+
+     var valueemail  = email.value;
+
+   email.value = valueemail.trim();
+
+   
+ 
+  }
+
+}
+
+
+
+</script>
+
 
 
 

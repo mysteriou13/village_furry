@@ -1,15 +1,18 @@
 function verif(){
 
-    
+
+   
     var urlcourante = document.location.href;
 
     
-    var position = urlcourante.indexOf("&email=true"); 
+    var positionemail = urlcourante.indexOf("&email=true"); 
     
-    
-if(position == -1){
+ 
+if(positionemail > -1){
 
   document.getElementById('error_mail').innerHTML = "email pris";
+
+  document.getElementById('pseudo').value = document.getElementById('pseudo').value;
 
 }else{
 
@@ -19,10 +22,12 @@ document.getElementById('error_mail').innerHTML = "";
 
 
 
-var position = urlcourante.indexOf("&pseudo=true"); 
+var positionpseudo = urlcourante.indexOf("&pseudo=true"); 
+
     
+
     
-if(position == -1){
+if(positionpseudo > -1){
 
   document.getElementById('name_exists').innerHTML = "pseudo pris";
 

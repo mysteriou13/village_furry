@@ -43,6 +43,33 @@
 
 
       ?>
+
+      <div id = "input_pseudo" class = "d-none" >
+        
+   <?php 
+    if(isset($_POST['pseudo'])){
+
+      echo $_POST['pseudo'];
+
+    }
+   ?>
+
+      </div>
+
+
+
+      <div id = "input_email" class = "d-none" >
+        
+        <?php 
+         if(isset($_POST['email'])){
+     
+           echo $_POST['email'];
+     
+         }
+        ?>
+     
+           </div>
+
 </head>
 
 <body >
