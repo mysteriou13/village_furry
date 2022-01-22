@@ -17,54 +17,39 @@
 
 <div> <center> inscription </center> <div>
 
-<div class = "flex_item_center">
+</div>
 
 
 
-<div class = "div_text_inscription">
+<div>
   <div>
-  <div> pseudo(8 caractère)</div>
-  </div>
 
-  <div class = "card-text-inscription">
-  <div>
-    mot de pass (8 caractère)
-  </div>
+  <div> 
+    
+    <div class = "d-flex justify-content-between">
+      
+      <div>
+      pseudo
+     </div>
 
-</div>
+     <div>
+    <input type = "text" id = "pseudo"  name = "pseudo" onkeyup="length_string(8,'pseudo','pseudo ','taille_pseudo','result_pseudo')" >
+   
+       <div id = "name_exists">  </div>
 
-<div class = "card-text-inscription">
-<div>
-  repeter mot de pass
-</div>
+       <div id = "taille_pseudo">   </div>
+       
+   </div>
 
-</div>
-
-
-
-<div class ="card-text-inscription">
-<div>
- email
-</div>
-
-</div>
-
-</div>
-
-
-
-<div>
-  <div  class = "card-input-inscription">
-  <div> <input type = "text" id = "pseudo"  name = "pseudo" onkeyup="length_string(8,'pseudo','pseudo ','taille_pseudo','result_pseudo')" >
-
+    </div>
 
   </div>
 
 
-   <div id = "name_exists">  </div>
+  
 
    <input type = "hidden" id = "result_pseudo">
-<div id = "taille_pseudo">   </div>
+
 
 
   </div>
@@ -76,16 +61,27 @@
 
   <div>
 
-  <div class = "card-input-inscription">
+  <div >
 
-<div>
+<div class = "d-flex justify-content-between">
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
 
- <input type="password" id ="pass" name = "pass"  onkeyup="length_string(8,'pass','mot de pass ','taille_pass','result_pass')">
+
+<div> mot de pass (8 caratère minumum)  </div>
+
+<div>
+  <div>
+    <input type="password" id ="pass" name = "pass"  onkeyup="length_string(8,'pass','mot de pass ','taille_pass','result_pass')">
+    
+     </div>
+
+<div  id = "taille_pass" >  </div>
+
+</div>
 
  <input type = "hidden" id = "result_pass">
 </div>
-     <div  id = "taille_pass" > </div>
+     
 
 
    </div>
@@ -96,40 +92,59 @@
 
   <div>
 
-  <div class = "card-input-inscription">
+  <div>
 
-<div >
+<div class = "d-flex justify-content-between">
      <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
-
- <input type="password" id ="repet_pass" name = "repet_pass" onkeyup="verif_pass('pass','repet_pass','verif_pass','result_repet_pass')">
-
-  <input type = "hidden" id = "result_repet_pass">
-
-</div>
-     <div  id = "verif_pass" > </div>
-
-   </div>
-
-  </div>
-
-
-
-  <div>
-
-  <div class = "card-input-inscription">
 
 <div>
-     <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
+ repeter mot de pass 
+ </div>
 
- <input type="text" id ="email" name = "email" onkeyup="validate()" >
-
-
+<div>
+ <div>
+ <input type="password" id ="repet_pass" name = "repet_pass" onkeyup="verif_pass('pass','repet_pass','verif_pass','result_repet_pass')">
 </div>
 
+<div  id = "verif_pass" >   </div>
+</div>
+
+
+ <input type = "hidden" id = "result_repet_pass">
+
+</div>
+     
+
+   </div>
+
+  </div>
+
+
+
+  <div>
+
+  <div>
+
+<div class = "d-flex justify-content-between">
+     <!-- <input  id = "pass" type = "password"  v-on:keyup="pass">-->
+
+ <div> email </div>
+
+<div>
+
+<div>
+ <input type="text" id ="email" name = "email" onkeyup="validate()" >
+</div>
 
 <div id = "error_mail">
 
 </div>
+</div>
+
+</div>
+
+
+
 
  <input type = "hidden" id = "result_email">
 
