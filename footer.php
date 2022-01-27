@@ -13,6 +13,9 @@
 
 <script src = "./wp-content/themes/village_furry/js/verif_inscription.js"></script>
 
+<script src = "./wp-content/themes/village_furry/js/getfunction.js"></script>
+
+
 
 
   </body>

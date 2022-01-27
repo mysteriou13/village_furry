@@ -10,10 +10,10 @@
 
 </div>
 
-<div>
+<div id = "div_inscription">
 
 
-  <form action="http://village-furry.localhost/?page=inscription&type=true"  method = "POST" onmouseover = "validate()" >
+  <form  id = "form_inscription" action="http://village-furry.localhost/?page=inscription"  method = "POST" onmouseover = "validate()" >
 
 <div> <center> inscription </center> <div>
 
@@ -34,6 +34,7 @@
 
      <div>
     <input type = "text" id = "pseudo"  name = "pseudo" onkeyup="length_string(8,'pseudo','pseudo ','taille_pseudo','result_pseudo')" >
+    <input type = "hidden" name = "form_inscription">
    
        <div id = "name_exists">  </div>
 
@@ -163,10 +164,9 @@
 
 <div class = "flex_item_center" >
 
-<div onmouseover = "valide_submit()"> <input id = "btn" type = "button"   onclick = "verif()" value = "envoyer"></div>
+<div> <input id = "btn" type = "submit"    value = "envoyer"></div>
 
   
-
 </div>
 
 
@@ -191,25 +191,80 @@
 module.exports = {
   
   mounted() {
+
     
+      var urlcourante = document.location.href;
+
+      var positionemail = urlcourante.indexOf("&type=true"); 
+
+           var getvalueemail = getfunction("email");
+          
+         var errormail = document.getElementById("error_mail");
+
+
+         var getpseudo = getfunction("namepseudo").trim();
+
+   var getvaluepseudo = getfunction("pseudo");  
+
+  var name_exists = document.getElementById("name_exists");
+
   var pseudo =  document.getElementById("pseudo");
 
-   pseudo.value = document.getElementById("input_pseudo").innerHTML;
+  var  type = getfunction("type");
 
-     var valuepseudo  = pseudo.value;
+    
+        
+       if(getvalueemail == "false" ){
+      
 
-   pseudo.value = valuepseudo.trim();
+          var email = document.getElementById("email");
+          
+         var nameemail = getfunction("nameemail");
+
+          email.value = nameemail;
+
+          errormail.innerHTML = "";
 
 
-   var email =  document.getElementById("email");
+     }else{
 
-   email.value = document.getElementById("input_email").innerHTML;
+       var nameemail = getfunction("nameemail");
 
-     var valueemail  = email.value;
+         var email = document.getElementById("email");
+          
+         
+          email.value = nameemail;
 
-   email.value = valueemail.trim();
+           errormail.innerHTML = "email pris";
+      
+        
+     }
 
-   
+      if(getvaluepseudo == "false" || type == "false"){
+
+          pseudo.value = document.getElementById("input_pseudo").innerHTML;
+
+          var valuepseudo  = getpseudo.trim();
+
+          pseudo.value = valuepseudo;
+
+
+          name_exists.innerHTML = " ";
+
+      }
+        if(getvaluepseudo == "true"){
+
+           name_exists.innerHTML = "pseudo pris";
+        }
+
+    if(positionemail > -1){
+      
+      document.getElementById("form_inscription").style.display = "none";
+
+      document.getElementById("div_inscription").innerHTML =  "inscription reussi";
+      
+    
+    }
  
   }
 

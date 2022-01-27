@@ -27,34 +27,6 @@ document.getElementById(input_result).value = result;
 }
 
 
-function valide_submit(){
-
-var result_pseudo = document.getElementById('result_pseudo').value;
-
-var result_pass = document.getElementById('result_pass').value;
-
-var result_repet_pass = document.getElementById('result_repet_pass').value;
-
-var result_email = document.getElementById('result_email').value;
-
-var btn = document.getElementById('btn');
-
-if(result_pseudo == "true" && result_pass == "true"  &&  result_repet_pass && result_email == "true"){
-
-
-btn.setAttribute('type','submit');
-
-}else{
-
-btn.setAttribute('type','button');
-
-}
-
-
-
-}
-
-
 function verif_pass(pass,repet_pass,verif_pass,input_result){
 
 var p = document.getElementById(pass).value;
@@ -96,6 +68,11 @@ function validate() {
 
   var result_email = document.getElementById('result_email').value;
 
+  var urlcourante = document.location.href;
+
+  var positionemail = urlcourante.indexOf("&email=false"); 
+
+  if(positionemail == 1){
   if(email !== ""){
     if (checkEmail(email)) {
 
@@ -109,6 +86,7 @@ function validate() {
 
 
     }
+  }
 
   }
 

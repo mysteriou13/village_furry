@@ -1,8 +1,7 @@
 <!doctype html>
 
 <html lang = "fr">
-
-<head>
+  <head>
 
     <meta charset = "UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,13 +27,15 @@
       include($login);
 
   
-
+    
       
 
-    if(isset($_POST) && isset($_GET['page']) && !empty($_GET['page']) && $_GET['page'] == 'inscription'){
+    if(isset($_POST['form_inscription'])){
+
+    
+         
 
         $inscription->insert_user($_POST['pseudo'], $_POST['pass'],$_POST['email'] );
-
 
       }
 
